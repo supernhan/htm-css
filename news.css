@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001427;
+   font-family: "Montserrat", sans-serif !important;
+
+}
+.group1_content p{
+    margin-top: 1rem;
+}
+.news_container{
+    color: hsla(0, 0%, 100%, 1);
+    width: 94%;
+    border-radius: 10px;
+    margin: 5rem auto;
+    background-color: hsla(0, 0%, 100%, 0.2)    ;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.group_lon{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+.group2{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.group1 {
+    position: relative;
+}
+
+.group1_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: grid;
+    row-gap: .75rem;
+    padding: 10px; 
+    margin-bottom: 2rem;
+}
+.group1_content h1{
+    font-size: 36px;
+}
+.group1_content p{
+    font-size: 21px;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.group p{
+    font-size: 15px;
+}
+.group i{
+    font-size: 2rem;
+}
+.see_more{
+    color: hsla(42, 82%, 75%, 1);
+    display: grid;
+    font-size: 24px;
+    text-align: center;
+    row-gap: 1rem;
+}
+.group21 {
+    position: relative;
+}
+.group21_content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.list_news{
+    padding: 2rem 3rem 3rem 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+}
+.list_group{
+    display: flex;
+    gap: 2rem;
+}
+.list_content{
+    display: grid;
+    row-gap: .75rem;
+    color: white;
+}
+.pagination {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .pagination a {
+    color: white;
+    border: 1px solid hsla(42, 82%, 75%, 1);
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+  }
+  .pagination .active {
+    background-color: hsla(42, 82%, 75%, 1); /* Example background color for the active link */
+    color: black; /* Example text color for the active link */
+}
+  .footer{
+    background-color: transparent !important;
+  }
+  
+
+  @media (min-width:350px) and (max-width:1000px)
+  {
+    .userr img {
+        width: 2.5rem;
+    }
+    .group1{
+        display: none;
+    }
+    
+    .none{
+        display: none;
+    }
+    .group2{
+        grid-template-columns: none;
+    }
+    .group_lon{
+        flex-direction: column;
+    }
+    .list_news{
+        grid-template-columns: none;
+    }
+    .list_group img{
+        width: 100%;
+    }
+    .list_group{
+        flex-direction: column;
+    }
+  }
+
+  @media (min-width: 1001px) and (max-width:1369px){
+    .none1{
+        display: none;
+    }
+    .see_more{
+        text-align: center;
+    }
+    .list_group{
+        padding: 1rem 11rem 1rem 11rem;
+    }
+    .group_lon{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .group2{
+        grid-template-columns: none;
+        padding: 3rem;
+    }
+    .see_more{
+        text-align: center;
+    }
+
+  } 
+  @media (min-width:1003px) and (max-width:1180px) {
+    .list_group img{
+        width: 100%;
+    }
+    .list_group{
+        flex-direction: column;
+    }
+    .list_news{
+        grid-template-columns: none;
+    }
+  }

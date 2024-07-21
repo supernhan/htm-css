@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #001427;
+}
+.cart_container{
+    padding: 5rem 2rem 0 1rem;
+
+}
+.cart_container h1{
+    font-size: 96px;
+    color: hsla(42, 82%, 75%, 1);
+    font-family: "Dancing Script", cursive;
+
+}
+.detail_h1 , span{
+    color: hsla(0, 0%, 100%, 1) !important;
+}
+.detail_h2{
+    width: 275px;
+    font-size: 22px;
+    color: hsla(0, 0%, 100%, 1);
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+
+}
+.detail_h1{
+    font-size: 46px !important;
+    font-weight: 700;
+}
+input[type="checkbox"] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: rgba(40, 40, 40, 0.2);
+    color: black;
+    appearance: none;
+    border-radius: 1px;
+    border: 1px solid hsla(42, 82%, 75%, 1) ;
+  }
+  input[type=checkbox]:checked {
+    background-color: white;
+    /* or whatever styles you want depending on your design */
+    /* be as obvious as possible that it's a checkbox and that it's checked! */
+}
+span{
+    font-size: 20px;
+    font-weight: 900;
+}
+.car_content{
+    width: 400px;
+    display: grid;
+    row-gap: 1rem;
+}
+.car_content p{
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+}
+.cart_mini{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.cart_group{
+    padding-top: 4rem;
+    padding-right: 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 3rem;
+    width: 100%;
+    height:618.93px ;
+    overflow: hidden;
+    overflow-y: scroll;
+    scrollbar-color: hsla(42, 82%, 75%, 1) transparent ;
+    scrollbar-width: thin;
+}
+.option_all{
+    width: 100%;
+    padding: 3rem;
+    border-radius: 30px 30px 0 0;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: hsla(42, 82%, 75%, 1);
+    border-top: 3px solid hsla(209, 100%, 8%, 1); 
+    border-right: 3px solid hsla(209, 100%, 8%, 1); 
+    border-left: 3px solid hsla(209, 100%, 8%, 1); 
+
+}
+.option_check{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.check_option{
+    width: 41px !important;
+    height: 39px !important;
+    border: 3px solid hsla(209, 100%, 8%, 1) !important;
+    appearance: none;
+    color: transparent !important;
+
+}
+.label_check{
+    font-size: 36px;
+    font-weight: 600;
+    color: hsla(0, 0%, 0%, 1);
+    font-family: "Montserrat", sans-serif;
+}
+.all_pay{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.all_pay p{
+    font-size: 36px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: hsla(0, 0%, 0%, 1);
+}
+.all_pay span{
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: hsla(0, 0%, 0%, 1) !important;
+}
+.tieptuc{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: hsla(209, 100%, 8%, 1);
+    border: 4px solid hsla(209, 100%, 8%, 1);
+    padding: 10px 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+@media (min-width: 350px) and (max-width:1324px)
+{
+    .check_option{
+        height: 27px !important;
+    }
+    .tieptuc{
+        padding: 10px 15px;
+    }
+    .userr img{
+        width: 2.5rem;
+    }
+    .cart_container h1{
+        font-size: 70px;
+        text-align: center;
+    }
+    .cart_container{
+        padding: 5rem 0 0 0;
+    }
+    .cart_group{
+        grid-template-columns: none;
+    }
+    .cart_mini{
+        flex-direction: column;
+        text-align: center;
+    }
+    .car_content{
+        width: 100%;
+    }
+    .detail_h2{
+        width: 100%;
+    }
+    .option_all{
+        padding: 1rem;
+        justify-content: space-between;
+    }
+    .all_pay{
+        gap: 1rem;
+    }
+    .label_check{
+        font-size: 20px;
+    }
+    .all_pay p{
+        font-size: 14px;
+    }
+    .all_pay span{
+        font-size: 20px;
+    }
+    .tieptuc{
+        font-size: 14px;
+    }
+}
